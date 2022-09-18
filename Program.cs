@@ -158,13 +158,6 @@ void ShowArray(int[] array1) // Вывести на экран массив
         else Console.WriteLine($"{array1[i]}.\n");
     }
 }
-void ShowStringArray(string[] array1) // Вывести на экран массив
-{
-    for (int i = 0; i < array1.Length; i++)
-    {
-        Console.WriteLine($"{array1[i]}");
-    }
-}
 void ShowRealArray(double[] array1) // Вывести на экран вещественный массив
 {
     for (int i = 0; i < array1.Length; i++)
@@ -266,7 +259,6 @@ string[] Triangle(double a, double b, double c)
 // 4 Задача //
 int[,] Fill2dArray(int[,] result, int x, int y)
 {
-    int retrynum = 0;
     for (int i = 0; i < result.GetLength(0); i++)
     {
         for (int j = 0; j < result.GetLength(1); j++)
