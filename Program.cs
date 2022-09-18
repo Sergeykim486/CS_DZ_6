@@ -207,6 +207,8 @@ double[] FindPoint(double k1, double k2, double b1, double b2)
     // (k1 - k2) * x = b2 + b1
     x = (b1 - b2) / (k2 - k1);
     y = k1 * x + b1;
+    result[0] = x;
+    result[1] = y;
     return (result);
 }
 
@@ -320,7 +322,6 @@ int[] Max2dArray(int[,] array1)
     result[2] = jmax;
     return (result);
 }
-
 int[] Min2dArray(int[,] array1)
 {
     int imin = 0;
@@ -457,7 +458,7 @@ restart:
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\n═══════════════════════════════════════════════════════════════════════════════════════════\n" +
                 "Углы треугольника равны:\n" +
-                $"Угол A = {triangle1[0]}      B = {triangle1[1]}      C = {triangle1[2]}\n" +
+                $"      A = {triangle1[0]}      B = {triangle1[1]}      C = {triangle1[2]}\n" +
                 $"ПАРАМЕТРЫ ТРЕУГОЛЬНИКА:\n");
                 for (int i = 0; i < triangle2.Length; i++)
                 {
