@@ -114,6 +114,8 @@ void ext() // Функция задает пользователю вопрос 
 {
 AskAgayn:
     Console.Clear();
+    Console.WriteLine();
+    Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.White;
     Console.BackgroundColor = ConsoleColor.DarkRed;
     Console.WriteLine("  ╔═ В Ы Х О Д   И З   П Р О Г Р А М М Ы ═══════════════╗  \n" +
